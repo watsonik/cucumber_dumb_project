@@ -1,0 +1,27 @@
+{
+  "name": "js_e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "remove-logs": "node ./test/utils/cleanup/logsCleaner.js",
+    "postinstall": "webdriver-manager update --versions.standalone=3.14.0 --versions.chrome=80.0.3987.122  --gecko=false",
+    "QaWpostinstall": "webdriver-manager update --versions.standalone=3.10.0 --gecko=false",
+    "pretest": "npm run remove-logs",
+    "test": "protractor ./test/config/protractor.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.0.2",
+    "cucumber-pretty": "^6.0.0",
+    "fs-extra": "^8.1.0",
+    "protractor": "^5.4.3",
+    "protractor-cucumber-framework": "^6.2.0",
+    "winston": "^3.2.1",
+    "yargs": "^14.0.0"
+  }
+}
