@@ -20,7 +20,7 @@ class HomePage extends BasePage {
         return this.searchButton.click();
     };
 
-    sendSearchRequest(text) {
+    async sendSearchRequest(text) {
     // async sendSearchRequest(text) {
         return this.searchInput.sendKeys(text).submit();
     };

@@ -1,4 +1,4 @@
-const logger = require('../../config/logger.config');
+const logger = require('../../config/logger.config').logger;
 class Element {
     constructor(elementName, selector) {
         this.element = element(by.css(selector));

@@ -13,18 +13,18 @@
     "uri": "test\\features\\wd_site.feature",
     "elements": [
       {
-        "id": "western-digital-smoke;home-page-should-be-opened",
+        "id": "western-digital-smoke;products-list-page-should-be-sorted-by-title-z-a",
         "keyword": "Scenario",
-        "line": 5,
-        "name": "Home page should be opened",
+        "line": 17,
+        "name": "Products list page should be sorted by Title Z-A",
         "tags": [
           {
             "name": "@all",
             "line": 1
           },
           {
-            "name": "@smoke",
-            "line": 4
+            "name": "@plp",
+            "line": 16
           }
         ],
         "type": "scenario",
@@ -32,15 +32,53 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
-            "name": "I open \"www.tut.by\" page",
+            "line": 18,
+            "name": "I open \"Home\" page",
             "match": {
-              "location": "test\\step_definitions\\my_steps.js:5"
+              "location": "test\\step_definitions\\browserSteps.js:9"
             },
             "result": {
-              "status": "failed",
-              "duration": 17000000,
-              "error_message": "WebDriverError: invalid argument\n  (Session info: chrome=80.0.3987.122)\n  (Driver info: chromedriver=80.0.3987.106 (f68069574609230cf9b635cd784cfb1bf81bb53a-refs/branch-heads/3987@{#882}),platform=Windows NT 10.0.18362 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\Ihar_Sakun\\OneDrive - EPAM\\prv\\data\\training\\js\\murashko\\cucumber\\node_modules\\selenium-webdriver\\lib\\error.js:546:15)\n    at parseHttpResponse (C:\\Users\\Ihar_Sakun\\OneDrive - EPAM\\prv\\data\\training\\js\\murashko\\cucumber\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\Ihar_Sakun\\OneDrive - EPAM\\prv\\data\\training\\js\\murashko\\cucumber\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:94:5)\nFrom: Task: WebDriver.navigate().to(www.tut.by)\n    at Driver.schedule (C:\\Users\\Ihar_Sakun\\OneDrive - EPAM\\prv\\data\\training\\js\\murashko\\cucumber\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at Navigation.to (C:\\Users\\Ihar_Sakun\\OneDrive - EPAM\\prv\\data\\training\\js\\murashko\\cucumber\\node_modules\\selenium-webdriver\\lib\\webdriver.js:1133:25)\n    at Driver.get (C:\\Users\\Ihar_Sakun\\OneDrive - EPAM\\prv\\data\\training\\js\\murashko\\cucumber\\node_modules\\selenium-webdriver\\lib\\webdriver.js:988:28)\n    at ProtractorBrowser.get (C:\\Users\\Ihar_Sakun\\OneDrive - EPAM\\prv\\data\\training\\js\\murashko\\cucumber\\node_modules\\protractor\\built\\browser.js:655:32)\n    at World.<anonymous> (C:\\Users\\Ihar_Sakun\\OneDrive - EPAM\\prv\\data\\training\\js\\murashko\\cucumber\\test\\step_definitions\\my_steps.js:7:20)"
+              "status": "passed",
+              "duration": 3155000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I select all brands products",
+            "match": {
+              "location": "test\\step_definitions\\browserSteps.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1906000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I choose Sort by Title desc",
+            "match": {
+              "location": "test\\step_definitions\\browserSteps.js:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3857000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "Product list should be sorted",
+            "match": {
+              "location": "test\\step_definitions\\validationSteps.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10287000000
             }
           },
           {

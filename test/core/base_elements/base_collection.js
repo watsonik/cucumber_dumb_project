@@ -1,4 +1,4 @@
-const logger = require('../../config/logger.config');
+const logger = require('../../config/logger.config').logger;
 const EC = protractor.ExpectedConditions;
 
 class Collection {
@@ -27,7 +27,7 @@ class Collection {
     };
 
     async waitForPresence() {
-        return browser.wait(EC.presenceOf(this.collection.first()), 10_000);
+        return browser.wait(EC.presenceOf(this.collection.first()), 10000);
     };
 };
 

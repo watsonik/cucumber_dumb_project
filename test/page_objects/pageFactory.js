@@ -4,6 +4,7 @@ const BasePage = require("../core/base_page/base_page");
 const SearchPage = require("./search_page/search_page");
 
 class PageFactory {
+
     static getPage(pageName) {
         switch (pageName) {
             case "Home":
@@ -14,7 +15,7 @@ class PageFactory {
                 return new SearchPage();
             default:
                 return new BasePage();
-        };
+        }
     };
 };
 

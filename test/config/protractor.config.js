@@ -32,14 +32,16 @@ exports.config = {
         require: [path.resolve('./test/step_definitions/**/*.js')],
         ignoreUncaughtExceptions: true,
         format: ['json:./reports/report.json','./node_modules/cucumber-pretty'],
-        tags: yargs.tag || '@all'
+        tags: yargs.tag || '@plp'
     },
     onPrepare: () => {
         logger.info('Maximizing browser window');
         browser.ignoreSynchronization = true;
-        return browser.manage().window().setSize(1000, 800);
+        browser.manage().timeouts().implicitlyWait(10000);
+        return browser.manage().window().maximize();
+        // return browser.manage().window().setSize(1000, 800);
     },
     afterLaunch: () => {
-        // return reporter.generate(reporterOptions);
+        return reporter.generate(reporterOptions);
     }
 };
