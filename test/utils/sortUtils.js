@@ -14,7 +14,6 @@ function sortStringDesc(a, b) {
     return 0;
 }
 
-
 module.exports = {
     sortString,
     sortStringDesc

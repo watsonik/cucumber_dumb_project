@@ -19,4 +19,3 @@ Feature: Western Digital smoke
     When I select all brands products
     When I choose Sort by Title desc
     Then Product list should be sorted
-

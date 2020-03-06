@@ -13,6 +13,144 @@
     "uri": "test\\features\\wd_site.feature",
     "elements": [
       {
+        "id": "western-digital-smoke;home-page-should-be-opened",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Home page should be opened",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open \"Home\" page",
+            "match": {
+              "location": "test\\step_definitions\\browserSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3598000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Page title should be \"Western Digital Store\"",
+            "match": {
+              "location": "test\\step_definitions\\validationSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "western-digital-smoke;positive:-search-should-provide-results",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Positive: Search should provide results",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@search",
+            "line": 9
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "I open \"Home\" page",
+            "match": {
+              "location": "test\\step_definitions\\browserSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4595000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I click \"Search Button\"",
+            "match": {
+              "location": "test\\step_definitions\\browserSteps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 124000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I search \"Flash\"",
+            "match": {
+              "location": "test\\step_definitions\\browserSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2030000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I get search result",
+            "match": {
+              "location": "test\\step_definitions\\validationSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3543000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
         "id": "western-digital-smoke;products-list-page-should-be-sorted-by-title-z-a",
         "keyword": "Scenario",
         "line": 17,
@@ -35,11 +173,11 @@
             "line": 18,
             "name": "I open \"Home\" page",
             "match": {
-              "location": "test\\step_definitions\\browserSteps.js:9"
+              "location": "test\\step_definitions\\browserSteps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 3155000000
+              "duration": 2187000000
             }
           },
           {
@@ -48,11 +186,11 @@
             "line": 19,
             "name": "I select all brands products",
             "match": {
-              "location": "test\\step_definitions\\browserSteps.js:37"
+              "location": "test\\step_definitions\\browserSteps.js:31"
             },
             "result": {
               "status": "passed",
-              "duration": 1906000000
+              "duration": 3957000000
             }
           },
           {
@@ -61,11 +199,11 @@
             "line": 20,
             "name": "I choose Sort by Title desc",
             "match": {
-              "location": "test\\step_definitions\\browserSteps.js:46"
+              "location": "test\\step_definitions\\browserSteps.js:41"
             },
             "result": {
               "status": "passed",
-              "duration": 3857000000
+              "duration": 1967000000
             }
           },
           {
@@ -78,7 +216,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 10287000000
+              "duration": 10336000000
             }
           },
           {
@@ -89,7 +227,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]

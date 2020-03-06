@@ -1,5 +1,4 @@
 const BasePage = require("../../core/base_page/base_page");
-const SearchPage = require("../search_page/search_page");
 const Sidebar = require("./sidebar")
 const Element = require("../../core/base_elements/base_element");
 
@@ -21,7 +20,6 @@ class HomePage extends BasePage {
     };
 
     async sendSearchRequest(text) {
-    // async sendSearchRequest(text) {
         return this.searchInput.sendKeys(text).submit();
     };
 };
