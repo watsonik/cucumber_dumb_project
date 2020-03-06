@@ -15,7 +15,7 @@
       {
         "id": "western-digital-smoke;home-page-should-be-opened",
         "keyword": "Scenario",
-        "line": 5,
+        "line": 8,
         "name": "Home page should be opened",
         "tags": [
           {
@@ -24,7 +24,7 @@
           },
           {
             "name": "@smoke",
-            "line": 4
+            "line": 7
           }
         ],
         "type": "scenario",
@@ -32,27 +32,109 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 6,
+            "line": 5,
             "name": "I open \"Home\" page",
             "match": {
               "location": "test\\step_definitions\\browserSteps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 3598000000
+              "duration": 4573000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 7,
+            "line": 10,
             "name": "Page title should be \"Western Digital Store\"",
             "match": {
               "location": "test\\step_definitions\\validationSteps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 58000000
+              "duration": 324000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "western-digital-smoke;positive:-search-should-provide-results",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Positive: Search should provide results",
+        "tags": [
+          {
+            "name": "@all",
+            "line": 1
+          },
+          {
+            "name": "@search",
+            "line": 12
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open \"Home\" page",
+            "match": {
+              "location": "test\\step_definitions\\browserSteps.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2847000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I click \"Search Button\"",
+            "match": {
+              "location": "test\\step_definitions\\browserSteps.js:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 780000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I search \"Flash\"",
+            "match": {
+              "location": "test\\step_definitions\\browserSteps.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3778000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I get search result",
+            "match": {
+              "location": "test\\step_definitions\\validationSteps.js:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3652000000
             }
           },
           {
@@ -69,18 +151,18 @@
         ]
       },
       {
-        "id": "western-digital-smoke;positive:-search-should-provide-results",
+        "id": "western-digital-smoke;products-list-page-should-be-sorted-by-title-z-a",
         "keyword": "Scenario",
-        "line": 10,
-        "name": "Positive: Search should provide results",
+        "line": 20,
+        "name": "Products list page should be sorted by Title Z-A",
         "tags": [
           {
             "name": "@all",
             "line": 1
           },
           {
-            "name": "@search",
-            "line": 9
+            "name": "@plp",
+            "line": 19
           }
         ],
         "type": "scenario",
@@ -88,53 +170,53 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 11,
+            "line": 5,
             "name": "I open \"Home\" page",
             "match": {
               "location": "test\\step_definitions\\browserSteps.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 4595000000
+              "duration": 2391000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 12,
-            "name": "I click \"Search Button\"",
+            "line": 22,
+            "name": "I select all brands products",
             "match": {
-              "location": "test\\step_definitions\\browserSteps.js:16"
+              "location": "test\\step_definitions\\browserSteps.js:31"
             },
             "result": {
               "status": "passed",
-              "duration": 124000000
+              "duration": 4207000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 13,
-            "name": "I search \"Flash\"",
+            "line": 23,
+            "name": "I choose Sort by Title desc",
             "match": {
-              "location": "test\\step_definitions\\browserSteps.js:23"
+              "location": "test\\step_definitions\\browserSteps.js:41"
             },
             "result": {
               "status": "passed",
-              "duration": 2030000000
+              "duration": 4112000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 14,
-            "name": "I get search result",
+            "line": 24,
+            "name": "Product list should be sorted",
             "match": {
-              "location": "test\\step_definitions\\validationSteps.js:19"
+              "location": "test\\step_definitions\\validationSteps.js:27"
             },
             "result": {
               "status": "passed",
-              "duration": 3543000000
+              "duration": 10289000000
             }
           },
           {
@@ -146,88 +228,6 @@
             "result": {
               "status": "passed",
               "duration": 1000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "western-digital-smoke;products-list-page-should-be-sorted-by-title-z-a",
-        "keyword": "Scenario",
-        "line": 17,
-        "name": "Products list page should be sorted by Title Z-A",
-        "tags": [
-          {
-            "name": "@all",
-            "line": 1
-          },
-          {
-            "name": "@plp",
-            "line": 16
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 18,
-            "name": "I open \"Home\" page",
-            "match": {
-              "location": "test\\step_definitions\\browserSteps.js:8"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2187000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 19,
-            "name": "I select all brands products",
-            "match": {
-              "location": "test\\step_definitions\\browserSteps.js:31"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3957000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 20,
-            "name": "I choose Sort by Title desc",
-            "match": {
-              "location": "test\\step_definitions\\browserSteps.js:41"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1967000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
-            "name": "Product list should be sorted",
-            "match": {
-              "location": "test\\step_definitions\\validationSteps.js:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 10336000000
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "match": {
-              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
             }
           }
         ]
